@@ -1,9 +1,25 @@
 <?php
-require "../model/categoriaModel.php";
+require "model/categoriaModel.php";
 
-$categoria =  new categoriaModel();
-$categoria->inserir("SmartTV");
-$categoria->excluir(1);
-$categoria->atualizar(2,"SmartPhone");
-var_dump($categoria->buscarPorId(3));
-var_dump($categoria->buscarTudo());
+class Categoria{
+    function __construct() {
+        $this->modelo = new CategoriaModel();
+    }
+    function index(){
+        include "view/template/conteudo.php";
+    }
+    function add(){
+        echo "mostrar form categoria";
+    }
+    function excluir($id){
+        echo "excluir categoria";
+    }
+}
+
+//$categoria =  new categoriaModel();
+//$categoria->inserir("SmartTV");
+//$categoria->excluir(1);
+//$categoria->atualizar(2,"SmartPhone");
+//var_dump($categoria->buscarPorId(3));
+//var_dump($categoria->buscarTudo());
+?>
