@@ -1,5 +1,5 @@
 <!--Conteúdo da Página-->
 <div class="container">
-  <h1 class= "mt-2">Conteúdo</h1>
+  <h1 class= "mt-2">Cadastro de Categorias</h1>
   <hr>
 </div>
